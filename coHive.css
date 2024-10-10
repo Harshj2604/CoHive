@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.coHiveHeader {
+  display: grid;
+  grid-template-columns: 2fr 7fr 3fr;
+
+  font-size: x-large;
+
+  width: 100%;
+  height: 80px;
+}
+.coHiveHeaderMenu {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.coHiveLogo {
+  margin: 0;
+}
+
+.mainFrame {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+  overflow: auto;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+
+  /* position: relative; */
+  position: relative;
+}
+
+.fullSize {
+  width: 100%;
+  height: 100%;
+}
+.itemCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.borderCheck {
+  border: 1px black solid;
+}
