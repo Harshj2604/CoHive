@@ -1,8 +1,16 @@
-html,
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
 body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(90deg, rgba(255, 184, 184, 0.835) 0%, rgb(251, 255, 255) 100%);
 }
 
 .coHiveHeader {
@@ -12,11 +20,7 @@ body {
   font-size: x-large;
 
   width: 100%;
-  height: 80px;
-}
-.coHiveHeaderMenu {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  height: 20px;
 }
 .coHiveLogo {
   margin: 0;
@@ -24,9 +28,7 @@ body {
 
 .mainFrame {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-
-  overflow: auto;
+  grid-template-rows: 500px 1px 500px 500px;
 }
 
 .footer {
@@ -35,11 +37,6 @@ body {
 
   /* position: relative; */
   position: relative;
-}
-
-.fullSize {
-  width: 100%;
-  height: 100%;
 }
 .itemCenter {
   display: flex;
@@ -53,5 +50,99 @@ body {
 }
 
 .borderCheck {
-  border: 1px black solid;
+  border: 0px;
+}
+
+.itemCenter{
+  height:100%;
+  width:100%;
+}
+.get-started{
+  border-radius: 100px;
+  border-width:0cap;
+  width:200px;
+  height:50px;
+  margin-top: 10px;
+  margin-left: 50px;
+  background-color: black;
+  color: white;
+  font-size: medium;
+}
+nav{
+  display:flex;
+  justify-content:space-between; 
+  padding:5% 12%;
+  align-items: center;   
+}
+.nav-links{
+  flex:1;
+  text-align: right;
+  padding-top: 15px;
+}
+.nav-links ul li{
+  list-style:none;
+  display:inline-block;
+  padding: 4px 8px;
+  position: relative;
+  font-size: medium;
+  transition: 0.2s;
+  
+}
+.nav-links ul li:hover{
+  font-weight: 600;
+  color:rgb(5, 5, 5);
+  border-radius: 3px;
+  font-size: 20px;
+}
+.redirectbuttoncss{
+  border:0cap;
+}
+.tegline{
+
+}
+.Influencers{
+  margin-left:50px;
+  font-size: larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sponsers{
+  font-size: larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-right:11px;
+}
+.briefintro{
+   height:440px;
+   width:1127px;
+   margin-top:50px;
+   margin-left:9px;
+}
+.how{
+  height:490px;
+  margin-left:0px;
+  width:1127px;
+}
+.what{
+  background-color: antiquewhite;
+  height:490px;
+  margin-left:10px;
+  width:1127px;
+}
+.aboutus{
+  height:50px;
+}
+#intro{
+  height:600px;
+}
+#Influencersimage{
+  height:300px;
+  border-radius: 5px;
+  margin-left: 180px;
+}
+#howitworks{
+  height:500px;
+}
+#spons-collab{
+  height:250px;
+  border-radius: 10px;
+  margin-left: 450px;
 }
