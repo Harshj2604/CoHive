@@ -343,3 +343,91 @@ body {
 .borderCheck {
   border: 1px black solid;
 }
+
+/* ! */
+.howItWorks {
+  margin-top: 10px;
+  display: grid;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.howItWorkscards {
+  width: 22%;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 16%,
+    rgb(175, 175, 175) 100%
+  );
+  margin-bottom: 20px;
+  margin-left: 1.5%;
+  border-radius: 30px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.4s;
+}
+
+.howItWorkscards img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.expand-btn {
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.howItWorkscards:hover {
+  /* box-shadow: 0px 8px 16px rgba(0, 0,0); */
+  transform: scale(1.09);
+}
+.howItWorkscards h1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* .howItWorkscards p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+} */
+
+.howItWorkscards.active h1,
+.howItWorkscards.active img {
+  display: none;
+}
+
+.howItWorkscards.active {
+  background-color: grey;
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.extrainfo {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.howItWorkscards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}

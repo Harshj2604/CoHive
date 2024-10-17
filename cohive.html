@@ -342,7 +342,76 @@
           </div>
         </div>
         <!-- How it works ? -->
-        <div class="itemCenter borderCheck howItWorks">How it works ?</div>
+        <div class="itemCenter howItWorks container">
+          <div class="howItWorkscards">
+            <h1>Statistical-Powered Matching</h1>
+            <img src="./images/stats.png" />
+            <button class="expand-btn" onclick="toggleExtraInfo(this)">
+              +
+            </button>
+            <div class="extrainfo" style="display: none">
+              <p>
+                Statistical-powered matching leverages data analysis and
+                algorithms to create optimal pairings between individuals,
+                products, or services based on patterns and preferences. By
+                analyzing large datasets, this approach enhances accuracy in
+                matching, making it ideal for job recruitment, dating platforms,
+                recommendation engines, and more, improving satisfaction and
+                engagement rates.
+              </p>
+            </div>
+          </div>
+          <div class="howItWorkscards">
+            <h1>Know Your Audience</h1>
+            <button class="expand-btn" onclick="toggleExtraInfo(this)">
+              +
+            </button>
+            <div class="extrainfo" style="display: none">
+              <p>
+                Understanding your audience is essential for any successful
+                marketing or business strategy. By identifying key demographics,
+                interests, and behaviors, businesses can tailor their messages
+                and offerings to better meet customer needs. This data-driven
+                approach boosts engagement, loyalty, and conversions by
+                delivering relevant content and personalized experiences.
+              </p>
+            </div>
+          </div>
+          <div class="howItWorkscards">
+            <h1>Tailored Campaigns</h1>
+            <img src="./images/how it works 2.png" />
+            <button class="expand-btn" onclick="toggleExtraInfo(this)">
+              +
+            </button>
+            <div class="extrainfo" style="display: none">
+              <p>
+                Targeted campaigns focus on reaching a specific audience
+                segment, based on factors like location, behavior, or
+                demographics. This approach maximizes efficiency by delivering
+                personalized messages to those most likely to respond. It
+                improves ROI by reducing waste in advertising spend, enhancing
+                relevance, and driving higher engagement rates.
+              </p>
+            </div>
+          </div>
+          <div class="howItWorkscards">
+            <h1>Real-Time Performance Tracking</h1>
+            <img src="./images/monitor.png" />
+            <button class="expand-btn" onclick="toggleExtraInfo(this)">
+              +
+            </button>
+            <div class="extrainfo" style="display: none">
+              <p>
+                Real-time performance tracking involves monitoring campaign or
+                system metrics as they happen. By analyzing up-to-the-minute
+                data, businesses can adjust strategies, optimize processes, and
+                respond to issues immediately. This leads to quicker
+                decision-making, improved efficiency, and the ability to adapt
+                to customer behaviors or market trends dynamically.
+              </p>
+            </div>
+          </div>
+        </div>
 
         <!-- What do you get ? -->
         <div class="itemCenter borderCheck whatDoYouGet">What do you get ?</div>
@@ -357,5 +426,20 @@
       <p class="itemCenter">About Us</p>
       <button>Redirect</button>
     </footer>
+
+    <script>
+      function toggleExtraInfo(button) {
+        const card = button.closest(".howItWorkscards");
+        const extraInfo = card.querySelector(".extrainfo");
+
+        if (extraInfo.style.display === "none") {
+          extraInfo.style.display = "block";
+          card.classList.add("active");
+        } else {
+          extraInfo.style.display = "none";
+          card.classList.remove("active");
+        }
+      }
+    </script>
   </body>
 </html>
