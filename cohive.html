@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="coHive.css" />
@@ -15,78 +9,86 @@
   <body>
     <div class="wrapper">
       <!-- Header -->
-      <header class="coHiveHeader borderCheck">
+      <header class="coHiveHeader">
         <!-- CoHive Logo -->
-        <p class="itemCenter fullSize coHiveLogo borderCheck">CoHive</p>
+        <p class="itemCenter fullSize coHiveLogo">CoHive</p>
 
-        <!--! (Header) - temporary -->
+        <!-- (Header blank space) -->
+        <p class="itemCenter fullSize" style="font-size: large; margin: 0"></p>
 
         <!-- CoHiveMenu - (Get Started + Menu) -->
-        <div class="nav-links">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-          </ul>
+        <div class="coHiveHeaderMenu">
+          <button class="itemCenter fullSize headerBtn" id="home-btn">
+            Home
+          </button>
+          <button class="itemCenter fullSize headerBtn" id="about-btn">
+            About
+          </button>
+          <button class="itemCenter fullSize headerBtn" id="services-btn">
+            Services
+          </button>
+          <button class="itemCenter fullSize headerBtn" id="contact-btn">
+            Contact
+          </button>
+          <button class="itemCenter fullSize" id="getStarted-btn">
+            Get Started
+          </button>
         </div>
-
-        <button class="get-started">Get Started</button>
-        <!-- <button class="buttonradius itemCenter fullSize">Menu</button> -->
       </header>
-
-      <div class="mainFrame">
-        <!-- Brief Intro -->
-        <div class="briefintro itemCenter borderCheck">
+      <div class="fullSize mainFrame">
+        <div class="itemCenter briefIntro">
           <div>
-            <img
-              id="intro"
-              src="./images/—Pngtree—business startup concept design people_6671197.png"
-            />
+            <img id="briefIntro-img" src="./images/briefIntroFinal.png" />
           </div>
-          <div>lets connect with us we have tio become more yo yo</div>
-        </div>
+          <div>
+            <div id="briefIntro-heading">
+              Welcome to the future of<br />influencer marketing!
+            </div>
+            <div id="briefIntro-text-img">
+              <div id="briefIntro-text">
+                Our platform connects sponsors with influencers using advanced
+                analytics to match the perfect collaborations. <br />
+                Whether you're a brand or an influencer, maximize your impact
+                with data-driven insights. Ready to transform your strategy ?
+              </div>
+              <!-- <div>
+                <img id="briefIntroSub-img" src="./images/briefIntro2sub.png" />
+              </div> -->
+            </div>
 
-        <!-- Top Influencers / Top Sponsors -->
-        <div class="itemCenter">
-          <div class="Influencers itemCenter">Top Influencers</div>
-          <div class="sponsers borderCheck itemCenter">Top Sponsors</div>
+            <div id="briefIntro-foot">
+              <div id="briefIntro-foot-text">
+                Let's connect & work together!
+              </div>
+              <div></div>
+              <!-- <div id="briefIntro-foot-btn" class="fullSize itemCenter">
+                Get Started
+              </div> -->
+              <div class="itemCenter fullSize"></div>
+            </div>
+          </div>
         </div>
-
-        <!-- How it works ? -->
-        <div>
-          <image
-            id="Influencersimage"
-            src="./images/Lovepik_com-380168155-hand-drawn-cartoon-communication-media-speaker-illustration-horn-medium.png"
-          ></image>
-          <image id="sponsersimage" src="./images/collabration.png"></image>
+        <div class="itemCenter borderCheck topList">
+          <div class="itemCenter borderCheck fullSize topInfluencers">
+            <div class="itemCenter fullSize">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>view</div>
+          </div>
+          <div class="itemCenter borderCheck fullSize topSponsors">
+            Top Sponsors
+          </div>
         </div>
-        <div class="how itemCenter borderCheck">
-          <div>How it works ? wljguh ,wgfbdui fdfbasi</div>
-          <image id="howitworks" src="./images/how it works.png"></image>
-        </div>
-
-        <!-- What do you get ? -->
-        <div class="what itemCenter borderCheck">
-          <image id="whatdoyou" src="./images/pngwing.com (2).png"></image>
-          <div>What do you get ?></div>
-        </div>
-
-        <!-- Tagline + Get Started -->
-        <div class="tegline itemCenter borderCheck">
-          Connect sponsers with creators
-        </div>
-        <image id="spons-collab" src="./images/pngwing.com (1).png"></image>
+        <div class="itemCenter borderCheck howItWorks">How it works ?</div>
+        <div class="itemCenter borderCheck whatDoYouGet">What do you get ?</div>
+        <div class="itemCenter borderCheck tagline">Tagline + Get Started</div>
       </div>
     </div>
 
     <!-- Footer - (Current features are temporary) -->
     <footer class="footer borderCheck">
-      <p class="aboutus itemCenter">About Us</p>
-
-      <button class="redirectbuttoncss">Redirect</button>
+      <p class="itemCenter">About Us</p>
+      <button>Redirect</button>
     </footer>
-    <p class="copyright">hello</p>
   </body>
 </html>
-<!-- <div><img id="Influencersimage" src="./163f1e15554f87699e2586cde3fcf716.png"></div> -->
